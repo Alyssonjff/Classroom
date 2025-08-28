@@ -1,0 +1,41 @@
+.input-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px 0;
+  width: 300px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.input-addon {
+  display: flex;
+  align-items: center;
+  padding: 8px 9px;
+  font-size: 14px;
+  color: #555;
+}
+
+.input-addon.gray {
+  background: #ececec;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.input-addon.right-border {
+  border-right: 1px solid #ddd;
+}
+
+.input-addon.left-border {
+  border-left: 1px solid #ddd;
+}
+
+.custom-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  background-color: transparent;
+  color: #555;
+}
