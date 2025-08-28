@@ -17,16 +17,16 @@
   color: #555;
 }
 
-.input-addon.gray {
+.gray {
   background: #ececec;
   box-shadow: 0 1px 4px rgba(0,0,0,0.04);
 }
 
-.input-addon.right-border {
+.right-border {
   border-right: 1px solid #ddd;
 }
 
-.input-addon.left-border {
+.left-border {
   border-left: 1px solid #ddd;
 }
 
