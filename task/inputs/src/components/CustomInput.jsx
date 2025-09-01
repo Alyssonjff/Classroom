@@ -1,18 +1,26 @@
-import { CircleArrowUp } from "lucide-react";
+import * as icons from "lucide-react";
 import "./CustomInput.css";
 
 function CustomInput({ left, right, placeholder, grayArea = true }) {
+  const render = (value) => {
+    if (typeof value === "string") {
+      const IconComponent = icons[value];
+      return IconComponent ? <IconComponent size={18} /> : value;
+    }
+    return value;
+  };
+
   return (
     <div className="input-box">
       {left && (
         <div className={`input-addon${grayArea ? " gray right-border" : ""}`}>
-          {left === "icon" ? <CircleArrowUp size={18} /> : left}
+          {render(left)}
         </div>
       )}
       <input className="custom-input" placeholder={placeholder} />
       {right && (
         <div className={`input-addon${grayArea ? " gray left-border" : ""}`}>
-          {right === "icon" ? <CircleArrowUp size={18} /> : right}
+          {render(right)}
         </div>
       )}
     </div>
